@@ -15,9 +15,7 @@
 [CONTACT_SOCIAL]
   other = "Social"
 [COPYRIGHT_MESSAGE_1]
-  other = "Design: [HTML5 UP](https://html5up.net)"
-[COPYRIGHT_MESSAGE_2]
-  other = "Hugo Port: [curttimson](https://curtistimson.co.uk)"
+  other = "Design and implementation: [HTML5 UP](https://html5up.net), [curttimson](https://curtistimson.co.uk), [Hugo O Rivera](https://roguh.com)"
 [INTRO_CONTINUE]
   other = "Continue"
 [NAV_CONTACT]

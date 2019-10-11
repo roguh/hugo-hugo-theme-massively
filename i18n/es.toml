@@ -9,15 +9,13 @@
 [CONTACT_FORM_FIELD_NAME]
   other = "Nombre"
 [CONTACT_FORM_SUBMIT_SEND_MESSAGE]
-  other = "Enviar Un Mensaje"
+  other = "Enviar Mensaje"
 [CONTACT_PHONE]
   other = "Teléfono"
 [CONTACT_SOCIAL]
   other = "Social"
 [COPYRIGHT_MESSAGE_1]
-  other = "Diseño: [HTML5 UP](https://html5up.net)"
-[COPYRIGHT_MESSAGE_2]
-  other = "Implementacion Hugo: [curttimson](https://curtistimson.co.uk)"
+  other = "Diseño y implementacion: [HTML5 UP](https://html5up.net), [curttimson](https://curtistimson.co.uk), [Hugo O Rivera](https://roguh.com)"
 [INTRO_CONTINUE]
   other = "Continuar"
 [NAV_CONTACT]
