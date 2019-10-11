@@ -3200,27 +3200,6 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-		#wrapper > .bg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			background-size: auto,								auto,														100% auto;
-			background-position: center,								center,														top center;
-			background-repeat: repeat,								no-repeat,													no-repeat;
-			background-attachment: scroll,								scroll,														scroll;
-			z-index: -1;
-		}
-
-			#wrapper > .bg.fixed {
-				position: fixed;
-				width: 100vw;
-				height: 100vh;
-			}
-
 		#wrapper.fade-in:before {
 			pointer-events: none;
 			-moz-transition: opacity 1s ease-in-out;
@@ -3367,20 +3346,12 @@ input, select, textarea {
 			font-size: 1.25rem;
 			font-style: italic;
 			margin-top: -0.25rem;
-			text-align: center;
 		}
 
 		#intro + #header {
-			margin-top: -20rem;
 		}
 
 			#intro + #header .logo {
-				-moz-transform: translateY(2rem);
-				-webkit-transform: translateY(2rem);
-				-ms-transform: translateY(2rem);
-				transform: translateY(2rem);
-				opacity: 0;
-				visibility: hidden;
 			}
 
 		#intro.hidden {
@@ -3397,36 +3368,11 @@ input, select, textarea {
 			visibility: hidden;
 		}
 
-			#intro.hidden + #header .logo {
-				-moz-transform: translateY(0);
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateY(0);
-				opacity: 1;
-				visibility: visible;
-			}
-
-		body.is-preload #intro {
-			-moz-transform: translateY(2rem);
-			-webkit-transform: translateY(2rem);
-			-ms-transform: translateY(2rem);
-			transform: translateY(2rem);
-			opacity: 0;
-		}
-
-			body.is-preload #intro:not(.hidden) + #header + #nav {
-				-moz-transform: translateY(4rem);
-				-webkit-transform: translateY(4rem);
-				-ms-transform: translateY(4rem);
-				transform: translateY(4rem);
-				opacity: 0;
-			}
-
 		@media screen and (max-width: 980px) {
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 90vh;
+				min-height: 99vh;
 			}
 
 				#intro p br {
@@ -3434,7 +3380,6 @@ input, select, textarea {
 				}
 
 				#intro + #header {
-					margin-top: -14rem;
 				}
 
 		}
@@ -4229,7 +4174,7 @@ input, select, textarea {
 						-webkit-flex-grow: 0;
 						-ms-flex-grow: 0;
 						flex-grow: 0;
-						width: 6rem;
+						width: 9rem;
 					}
 
 					#footer > section.split.contact > section > :last-child {

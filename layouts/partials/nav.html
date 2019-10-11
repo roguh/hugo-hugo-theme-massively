@@ -14,6 +14,12 @@
     </ul>
     {{ with $data.social }}
     <ul class="icons">
+        {{ with .email }}
+        <li><a href="{{ . }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        {{ end }}
+        {{ with .telephone }}
+        <li><a href="{{ . | safeURL }}" class="icon fa-phone"><span class="label">Phone</span></a></li>
+        {{ end }}
         {{ with .twitter }}
         <li><a href="{{ . }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
         {{ end }}

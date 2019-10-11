@@ -3,7 +3,7 @@
 <footer id="footer">
     {{ with $data.contactinfo.contactformaction }}
     <section>
-      <form method="post" action="{{ . }}">
+      <form action="https://formspree.io/mpvyrjym" method="post" action="{{ . }}">
         <div class="fields">
           <div class="field">
             <label for="name">{{ i18n "CONTACT_FORM_FIELD_NAME" . }}</label>
@@ -11,7 +11,7 @@
           </div>
           <div class="field">
             <label for="email">{{ i18n "CONTACT_FORM_FIELD_EMAIL" . }}</label>
-            <input type="text" name="email" id="email" />
+            <input type="email" name="_replyto" id="email" />
           </div>
           <div class="field">
             <label for="message">{{ i18n "CONTACT_FORM_FIELD_MESSAGE" . }}</label>
@@ -51,6 +51,12 @@
         <section>
             <h3>{{ i18n "CONTACT_SOCIAL" . }}</h3>
             <ul class="icons alt">
+                {{ with .email }}
+                <li><a href="{{ . }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                {{ end }}
+                {{ with .telephone }}
+                <li><a href="{{ . | safeURL }}" class="icon fa-phone"><span class="label">Phone</span></a></li>
+                {{ end }}
                 {{ with .twitter}}
                 <li><a href="{{ . }}" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                 {{ end }}
