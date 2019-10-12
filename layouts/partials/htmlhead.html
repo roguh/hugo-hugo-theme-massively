@@ -9,8 +9,9 @@
 		<title>{{ if eq (.Site.Title) (.Title) }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 		<meta charset="utf-8" />
     <meta name="description" content="{{ .Site.Params.Description }}">
-		<link rel="stylesheet" href='{{ "assets/css/main.css" | relURL }}' />
-		<link rel="stylesheet" href='{{ "assets/css/noscript.css" | relURL }}' />
+    {{ with (resources.Get "css/main.css") | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
 		{{ with .Site.Params.favicon }}
 		<link rel="shortcut icon" href="{{ . }}">
 		{{ end }}

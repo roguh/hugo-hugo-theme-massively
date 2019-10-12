@@ -1,5 +1,6 @@
-@import url(font-awesome.min.css);
+@import url(/assets/css/font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
 
 /*
 	Massively by HTML5 UP
@@ -4596,3 +4597,32 @@ input, select, textarea {
 		}
 
 	}
+
+/* Wrapper */
+
+	#wrapper {
+			background-color: #050043;
+			background-image: url("../../images/background.png"), url("../../images/overlay.png");
+      background-size: cover;
+			background-position: center top, center;
+			background-repeat: no-repeat, repeat;
+			background-attachment: fixed, scroll;
+	}
+
+		#wrapper.fade-in:before {
+			display: none;
+		}
+
+/* Intro */
+
+	body.is-preload #intro {
+		opacity: 1;
+	}
+
+		body.is-preload #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
