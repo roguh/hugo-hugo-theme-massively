@@ -4602,7 +4602,7 @@ input, select, textarea {
 
 	#wrapper {
 			background-color: #050043;
-			background-image: url("../../images/background.png"), url("../../images/overlay.png");
+			background-image: url("../../images/background.jpg");
       background-size: cover;
 			background-position: center top, center;
 			background-repeat: no-repeat, repeat;
