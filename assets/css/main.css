@@ -3376,8 +3376,8 @@ input, select, textarea {
 				min-height: 99vh;
 			}
 
-				#intro p br {
-					display: none;
+				#intro p .line {
+					display: block;
 				}
 
 				#intro + #header {
