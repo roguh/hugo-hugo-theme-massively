@@ -3,7 +3,7 @@
 <div id="intro">
     <h1>
         {{ range $i, $e := .title }}
-            {{ if $i }} <br/> {{ end }} {{ . }}
+            {{ if $i }} <br/> {{ end }} {{ markdownify . }}
         {{ end }}
     </h1>
     <p>
